@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awakening 灵性网站</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: "Arial", sans-serif;
+            background: url('https://source.unsplash.com/1600x900/?universe,stars') no-repeat center;
+            background-size: cover;
+            color: white;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1 {
+            font-size: 2.5rem;
+        }
+        p {
+            font-size: 1.2rem;
+            max-width: 600px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 1.5rem;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 2px solid white;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>欢迎来到 Awakening 灵性空间</h1>
+    <p>连接宇宙能量，探索你的内在智慧。点击下方按钮，抽取一张今日指引卡。</p>
+    <button onclick="drawCard()">抽卡</button>
+    <div id="result" style="margin-top:20px; font-size:2rem;"></div>
+
+    <script>
+        function drawCard() {
+            const cards = [
+                "🌟 你已准备好接受新的挑战",
+                "💫 你的能量正在觉醒",
+                "🌿 放下焦虑，信任宇宙",
+                "🔥 你即将迎来突破",
+                "🌊 让你的情绪自由流动"
+            ];
+            const randomIndex = Math.floor(Math.random() * cards.length);
+            document.getElementById("result").innerText = cards[randomIndex];
+        }
+    </script>
+
+</body>
+</html>
