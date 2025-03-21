@@ -1,7 +1,7 @@
 body {
     font-family: "Arial", sans-serif;
-    background: linear-gradient(to right, #141E30, #243B55);
-    color: white;
+    background: linear-gradient(to right, #141E30, #243B55); /* 深色漸變背景 */
+    color: white; /* 文字顏色設為白色 */
     text-align: center;
     display: flex;
     justify-content: center;
@@ -14,12 +14,13 @@ body {
 h1 {
     font-size: 2rem;
     margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* 文字加陰影提升可讀性 */
 }
 
 button {
     padding: 15px 25px;
     font-size: 1.2rem;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.2); /* 半透明白色 */
     color: white;
     border: 2px solid white;
     border-radius: 10px;
@@ -36,9 +37,10 @@ button:hover {
     font-size: 1.5rem;
     margin-top: 20px;
     padding: 15px;
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.3); /* 讓卡片有對比度 */
     border-radius: 10px;
     display: inline-block;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* 加陰影讓卡片更清晰 */
 }
 
 .hidden {
